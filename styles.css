@@ -1,0 +1,102 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /*--> make the input box follow not excess the the range*/
+}
+
+body {
+    width: 100%;
+    margin: 0;
+    font-family: 'Courier New', Courier, monospace;
+    background-color: #F5EEF8;
+    font-size: 16px;
+}
+
+h1, p {
+    text-align: center;
+}
+
+h1 {
+    margin: 1rem auto;
+}
+
+p {
+    margin-bottom: 2em;
+}
+
+form {
+    width: 60vw;
+    max-width: 600px;
+    min-width: 300px;
+    margin: 0 auto;
+    padding: 1em;
+    background-color: #D2B4DE;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+fieldset {
+    border: none;
+    margin-top: 2em;
+}
+
+fieldset:first-of-type {
+    margin-top: 0;
+}
+
+fieldset:first-of-type label {
+    margin-top: 1em;
+}
+
+label {
+    display:  block;
+}
+
+input,
+select,
+textarea {
+    min-height: 2em;
+    width: 100%;
+    /* border: none; */
+}
+
+select {
+    font-size: 1rem;
+}
+
+.inline  {
+    width: unset;
+    margin: 0 0.5em 0 0;
+    display: inline;
+    vertical-align: middle;
+}
+
+
+input[type="submit"] {
+    display: block;
+    width: 50%;
+    margin: 1em auto;
+}
+
+footer {
+    margin: 1rem auto;
+}
+
+footer p {
+    margin: 0;
+}
+
+footer a {
+    color: black
+}
+
+footer a:hover{
+    color: brown;
+}
+
+footer a:visited{
+    color: black;
+}
+
+footer a:active{
+    color: brown;
+}

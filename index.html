@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Do you like me?</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1 id="title">Do you like me?</h1>
+    <p id="description">Describe whether you like me? And why?</p>
+    <form id="survey-form" method="post" action="#">
+        <fieldset id="surveyee-info">
+            <label for="name" id="name-label">Enter Your Name </label><input type="text" name="info" id="name" placeholder="Enter your name" value="name" required>
+            <label for="email" id="email-label">Enter Your Email </label><input type="email" name="info" id="email" placeholder="Enter your email" value="email" required>
+            <label for="number" id="number-label">Enter Your Age </label><input type="number" name="info" id="number" min="18" max="60" placeholder="Enter your age" value="number-label" required>
+            <label for="dropdown">Role</label>
+            <select name="surveyee-title" id="dropdown">
+                <option value="">(select role)</option>
+                <option value="1">Fresher</option>
+                <option value="2">Junior</option>
+                <option value="3">Senior</option>
+            </select>   
+        </fieldset>
+        <fieldset>
+            <legend>What is your title?</legend>
+            <label for="role-fresher"><input type="radio" name="role" id="role-fresher" value="1" class="inline" checked>Developer</label>
+            <label for="role-junior"></label><input type="radio" name="role" id="role-junior" value="2"  class="inline" >Team leader</label>
+            <label for="role-pm"></label><input type="radio" name="role" id="role-pm" value="3"  class="inline" >Project manager</label>
+        </fieldset>
+        <fieldset id="feedbacks-fieldset">
+            <legend>How do you think about me?</legend>
+            <label for="feedback-dirty"></label><input type="checkbox" name="feedbacks" id="feedback-dirty" value="0" class="inline">Dirty</label>
+            <label for="feedback-dirty"></label><input type="checkbox" name="feedbacks" id="feedback-little-ugly" value="1" class="inline">Little ugly</label>
+            <label for="feedback-not-handsome"></label><input type="checkbox" name="feedbacks" id="feedback-not-handsome" value="2" class="inline">Not handsome</label>
+            <label for="feedback-little-handsome"></label><input type="checkbox" name="feedbacks" id="feedback-little-handsome" value="3" class="inline">Little handsome</label>
+            <label for="feedback-handsome"></label><input type="checkbox" name="feedbacks" id="feedback-handsome" value="4" class="inline">Handsome</label>
+            <label for="feedback-great"></label><input type="checkbox" name="feedbacks" id="feedback-great" value="5" class="inline">Great</label>
+            <label for="feedback-fabulous"></label><input type="checkbox" name="feedbacks" id="feedback-fabulous" value="6" class="inline">Fabulous</label>
+        </fieldset>
+        <fieldset id="comments">
+            <label for="more-comment">Please give me more comments:
+                <textarea name="more-comment" id="more-comment" cols="30" rows="5" placeholder="Enter your comment here..."></textarea>
+            </label>
+        </fieldset>
+        <input type="submit" value="Submit" id="submit">
+    </form>
+    <footer>
+        <p>Power by me: <a href="#" target="#">Manh Tran</a></p>
+    </footer>
+</body>
+</html>
